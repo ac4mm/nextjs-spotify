@@ -1,7 +1,11 @@
+import { Header } from "components/Header/Header"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Spotify Clone",
+  icons: {
+    icon: '/favicon.ico',
+  },
   twitter: {
     card: "summary_large_image",
   },
@@ -20,6 +24,17 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
+      {/*  Header*/}
+      <Header />
+
+      {/*  Your Library*/}
+
+      {/*  Content*/}
+
+      {/*  Album*/}
+
+      {/*  Player_bar*/}
+
     </>
   )
 }
