@@ -1,5 +1,6 @@
-import { Header } from "components/Header/Header"
 import { Metadata } from "next"
+import { Header } from "components/Header/Header"
+import Sidebar from "../components/Sidebar/Sidebar";
 
 export const metadata: Metadata = {
   title: "Spotify Clone",
@@ -27,7 +28,8 @@ export default function Web() {
       {/*  Header*/}
       <Header />
 
-      {/*  Your Library*/}
+      {/*  Your Sidebar*/}
+      <Sidebar />
 
       {/*  Content*/}
 
