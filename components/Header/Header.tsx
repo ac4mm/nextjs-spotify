@@ -1,4 +1,5 @@
 import { HomeIcon, MagnifyingGlassIcon, UserCircleIcon } from "@heroicons/react/24/solid"
+import RectangleStackIcon from "@heroicons/react/24/solid/RectangleStackIcon";
 
 export function Header() {
   return (
@@ -18,12 +19,13 @@ export function Header() {
           <HomeIcon className="h-8 w-8 cursor-pointer text-white mr-4" />
 
           <div className="relative w-md">
+            <MagnifyingGlassIcon className="absolute top-1/2 left-3 h-8 w-8 -translate-y-1/2 transform cursor-pointer text-gray-400 bg-[#1F1F1F]" />
             <input
               type="text"
               placeholder="What do you want to play?"
-              className="w-full rounded-full border text-white py-2 pr-4 pl-12 focus:ring-2 focus:ring-white-500 focus:outline-none"
+              className="w-full rounded-full bg-[#1F1F1F] text-white py-2 pr-4 pl-12 focus:ring-2 focus:ring-white-500 focus:outline-none"
             />
-            <MagnifyingGlassIcon className="absolute top-1/2 left-3 h-8 w-8 -translate-y-1/2 transform cursor-pointer text-gray-400" />
+            <RectangleStackIcon className="absolute top-1/2 right-3 h-8 w-8 -translate-y-1/2 transform cursor-pointer text-gray-400 bg-[#1F1F1F]"/>
           </div>
         </div>
 
