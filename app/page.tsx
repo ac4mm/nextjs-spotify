@@ -1,5 +1,7 @@
 import { Metadata } from "next"
 import { Header } from "components/Header/Header"
+import PlayerBar from "components/PlayerBar/PlayerBar"
+import ContentMusic from "../components/ContentMusic/ContentMusic"
 import Sidebar from "../components/Sidebar/Sidebar";
 
 export const metadata: Metadata = {
@@ -31,11 +33,13 @@ export default function Web() {
       {/*  Your Sidebar*/}
       <Sidebar />
 
-      {/*  Content*/}
+      {/*  ContentMusic*/}
+      <ContentMusic />
 
       {/*  Album*/}
 
       {/*  Player_bar*/}
+      <PlayerBar />
 
     </>
   )
